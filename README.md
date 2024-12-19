@@ -32,10 +32,10 @@ curl -fsSL https://raw.githubusercontent.com/cameronjweeks/get_server_info/main/
  4.) sets up a systemd service to run the app
 
  ## Usage
- After installation, the app will run automatically. You can access it via 127.0.0.1 on port 8080.
+ After installation, the app will run automatically. You can access it via 127.0.0.1 on port 82.
 
  ```bash
- curl http://127.0.0.1:8080/info
+ curl http://127.0.0.1:82/info
  ```
 
  ### Example Response 
@@ -50,4 +50,29 @@ curl -fsSL https://raw.githubusercontent.com/cameronjweeks/get_server_info/main/
   "memory_gb": 16,
   "disk_space_gb": 256
 }
+```
+
+### Set IP and Port
+You can define which ip address and port the service runs on with the cli options
+```
+--host 0.0.0.0 
+--port 9090
+```
+
+## Systemd Commands
+- status
+```
+sudo systemctl status get-server-info
+```
+- restart
+```
+sudo systemctl restart get-server-info
+```
+- stop
+```
+sudo systemctl stop get-server-info
+```
+- start
+```
+sudo systemctl start get-server-info
 ```
