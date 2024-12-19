@@ -35,7 +35,7 @@ curl -fsSL https://raw.githubusercontent.com/cameronjweeks/get_server_info/main/
  After installation, the app will run automatically. You can access it via 127.0.0.1 on port 8080.
 
  ```bash
- curl http://<server-ip>:8080/info
+ curl http://127.0.0.1:8080/info
  ```
 
  ### Example Response 
